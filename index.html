@@ -1,38 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cybersecurity Focus</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Vision</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f7fa;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
-    .container {
-      max-width: 700px;
-      margin: 100px auto;
-      background: white;
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      border-radius: 16px;
       padding: 40px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      max-width: 700px;
+      margin: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      animation: slideIn 1s ease-in-out;
     }
 
     h1 {
-      color: #005a8d;
-      font-size: 26px;
+      font-size: 28px;
+      color: #ffffff;
       margin-bottom: 20px;
     }
 
     p {
-      line-height: 1.6;
       font-size: 18px;
+      line-height: 1.8;
+      color: #e0e0e0;
+    }
+
+    strong {
+      color: #aad8ff;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     @media (max-width: 768px) {
-      .container {
-        margin: 40px
+      .card {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Cybersecurity Program Management</h1>
+    <p>
+      I am dedicated to advancing my expertise in <strong>cybersecurity program management</strong>, combining professional and academic certifications with a strong technical foundation. My goal is to strategically bridge the gap between <strong>technology</strong>, <strong>business goals</strong>, and <strong>market opportunities</strong>—delivering impactful, future-ready cybersecurity solutions in a rapidly evolving digital landscape.
+    </p>
+  </div>
+</body>
+</html>
